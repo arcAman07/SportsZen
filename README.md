@@ -19,3 +19,4 @@ Augmented Reality being used to give a virtual experience of a Non-Fungible Toke
 ## Deployment
 
 ## License
+[MIT](https://choosealicense.com/licenses/mit/)
