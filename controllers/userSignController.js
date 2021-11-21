@@ -6,10 +6,10 @@ const saltRounds = process.env.SALT;
 exports.postUser = (req, res, next) => {
   const password = req.body.password;
   bcrypt.genSalt(parseInt(saltRounds), (err, salt) => {
-    bcrypt.hash(req.body.regNo, salt, (error, hash) => {
+    bcrypt.hash(req.body.password, salt, (error, hash) => {
       if (!error) {
         const newUser = new User({
-          email: req.body.name,
+          email: req.body.email,
           password: hash,
           confirmPassword: password,
         });
@@ -19,8 +19,7 @@ exports.postUser = (req, res, next) => {
             res.send(err);
           } else {
             console.log("Successfully added the new user");
-            res.send("Successfully added the new user");
-            res.sendStatus(200);
+            res.render("items.ejs");
           }
         });
       } else {

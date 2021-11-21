@@ -15,7 +15,7 @@ exports.postProduct = (req, res, next) => {
       res.send(err);
     } else {
       console.log("Successfully added the new product");
-      res.send("Successfully added the new product");
+      res.render("items.ejs");
       res.sendStatus(200);
     }
   });

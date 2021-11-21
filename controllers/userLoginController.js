@@ -7,10 +7,11 @@ exports.authenticateUser = (req, res, next) => {
   User.findOne({ email: email }, (err, user) => {
     if (!err) {
       if (user.confirmPassword === password) {
-        res.status(200).json({
-          message: "User is authenticated",
-          user: user,
-        });
+        // res.status(200).json({
+        //   message: "User is authenticated",
+        //   user: user,
+        // });
+        res.render("items.ejs");
       } else {
         res.status(401).json({
           message: "Password is incorrect",

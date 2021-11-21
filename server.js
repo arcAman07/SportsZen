@@ -39,6 +39,6 @@ app.use(loginRoutes);
 app.use(productRoutes);
 app.use(ARRoute);
 app.use(purchaseRoute);
-app.use(ErrorRoute);
+// app.use(ErrorRoute);
 
 app.listen(PORT, () => console.log("The server is running"));
