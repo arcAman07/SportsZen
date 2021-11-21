@@ -12,6 +12,8 @@ const deleteUserController = require("../controllers/deleteUserController");
 
 router.post("/signUp", userSignController.postUser);
 
+router.get("/signUp", userSignController.getSignTemplate);
+
 router.get("/signUp/:id", userSignController.getUser);
 
 router.patch("/signUp/:id", patchUserController.patchUser);

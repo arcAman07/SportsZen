@@ -6,6 +6,8 @@ const userLoginController = require("../controllers/userLoginController");
 
 // Post Request to store user Details
 
-router.get("/login", userLoginController.authenticateUser);
+router.post("/login", userLoginController.authenticateUser);
+
+router.get("/login", userLoginController.getLoginTemplate);
 
 module.exports = router;

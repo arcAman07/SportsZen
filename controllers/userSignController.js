@@ -31,6 +31,10 @@ exports.postUser = (req, res, next) => {
   });
 };
 
+exports.getSignTemplate = (req, res, next) => {
+  res.render("signUp.ejs");
+};
+
 exports.getAllUsers = (req, res, next) => {
   User.find((err, results) => {
     if (!err) {

@@ -24,3 +24,7 @@ exports.authenticateUser = (req, res, next) => {
     }
   });
 };
+
+exports.getLoginTemplate = (req, res, next) => {
+  res.render("login.ejs");
+};
