@@ -17,6 +17,7 @@ app.use(express.static("public"));
 const signRoutes = require("./routes/signRoutes");
 const loginRoutes = require("./routes/loginRoutes");
 const productRoutes = require("./routes/productRoutes");
+const homeRoute = require("./routes/homeRoute");
 
 // Testing it on local database on Robo-3T
 
@@ -25,6 +26,7 @@ mongoose.connect("mongodb://localhost:27017/sportDB", {
   useUnifiedTopology: true,
 });
 
+app.use(homeRoute);
 app.use(signRoutes);
 app.use(loginRoutes);
 app.use(productRoutes);
