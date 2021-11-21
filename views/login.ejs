@@ -38,55 +38,48 @@
 
     <!-- You only need this form and the form-login.css -->
 
-    <form class="form-login" method="post" action="#">
+    <div class="mx-auto container flex items-center" id="nav">
+        <div class="w-full pt-2 p-4">
 
-        <div class="form-log-in-with-email">
-
-            <div class="form-white-background">
-
-                <div class="form-title-row">
-                    <h1>Log in</h1>
+            <div class="mx-auto md:p-6 md:w-1/2">
+                <div class="flex flex-wrap justify-between mb-5">
+                    <h1 class="text-2xl text-white text-center">
+                        Login
+                    </h1>
                 </div>
 
-                <div class="form-row">
-                    <label>
-                        <span>Email</span>
-                        <input type="email" name="email">
-                    </label>
-                </div>
+                <div class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <form>
+                        <div class="mb-8">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <input id="email" type="email" class="block text-white pr-10 shadow appearance-none border-2
+                                border-blue-500 rounded w-full py-2 px-4 mb-3 leading-tight focus:outline-none
+                                bg-gray-600 transition duration-500 ease-in-out" name="email" placeholder="Email ID" />
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <input id="password" type="password" class="block text-white pr-10 shadow appearance-none border-2
+                                border-blue-500 rounded w-full py-2 px-4 mb-3 leading-tight focus:outline-none
+                                bg-gray-600 transition duration-500 ease-in-out" name="password"
+                                    placeholder="password" />
+                            </div>
+                        </div>
 
-                <div class="form-row">
-                    <label>
-                        <span>Password</span>
-                        <input type="password" name="password">
-                    </label>
-                </div>
+                        <div class="mb-4 text-center">
+                            <button
+                                class="transition duration-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
 
-                <div class="form-row">
-                    <button type="submit">Log in</button>
-                </div>
 
+                </div>
             </div>
-
-            <a href="#" class="form-forgotten-password">Forgotten password &middot;</a>
-            <a href="#" class="form-create-an-account">Create an account &rarr;</a>
-
         </div>
-
-        <div class="form-sign-in-with-social">
-
-            <div class="form-row form-title-row">
-                <span class="form-title">Sign in with</span>
-            </div>
-
-            <a href="#" class="form-google-button">Google</a>
-            <a href="#" class="form-facebook-button">Facebook</a>
-            <a href="#" class="form-twitter-button">Twitter</a>
-
-        </div>
-
-    </form>
-
+    </div>
 </div>
 
 

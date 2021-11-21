@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="style">
+</head>
+
+
+<body class="bg-gray-800">
+    <div class='flex justify-center -mb-8'>
+        <div class='rounded-lg shadow-xl bg-background lg:w-full'>
+            <div class='mr-32'>
+                <div class='flex items-center justify-center w-full'>
+                    <label
+                        class='fillbox flex flex-col w-full h-32 rounded border-2 border-dashed hover:border-gray-300'>
+                        <div class='flex flex-col items-center justify-center pt-7'>
+                            <svg xmlns='http://www.w3.org/2000/svg' class='w-12 h-12 text-white group-hover:text-white'
+                                viewBox='0 0 20 20' fill='currentColor'>
+                                <path fill-rule='evenodd'
+                                    d='M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z'
+                                    clip-rule='evenodd' />
+                            </svg>
+                            <p class='pt-1 text-sm tracking-wider text-white group-hover:text-white'>
+                                Asset Details
+                            </p>
+                            <input type='file' class='opacity-0' />
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="justify-center">
+            <h1 class="text-white">Asset Name:</h1>
+            <p class="text-white">Asset Description:</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold
+                            py-2 px-4 rounded-full w-auto text-xl">
+                Buy Now
+            </button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold
+                            py-2 px-4 rounded-full w-auto text-xl">
+                View Augmented Experience
+            </button>
+        </div>
+    </div>
+</body>
