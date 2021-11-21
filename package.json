@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/arcAman07/SportsZen#readme",
   "dependencies": {
+    "@alch/alchemy-web3": "^1.1.8",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.6",
