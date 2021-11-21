@@ -11,6 +11,7 @@ const _ = require("lodash");
 const app = express();
 const PORT = process.env.PORT;
 app.set("view engine", "ejs");
+app.set("views", "./views");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 // app.use(bodyParser.json())
