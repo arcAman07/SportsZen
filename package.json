@@ -1,0 +1,32 @@
+{
+  "name": "sportszen",
+  "version": "1.0.0",
+  "description": "There are many sports players and teams in India and in the world who are unrecognized or rather underrated. They work day in day out without getting much recognition.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcAman07/SportsZen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcAman07/SportsZen/issues"
+  },
+  "homepage": "https://github.com/arcAman07/SportsZen#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "winston": "^3.3.3"
+  }
+}
