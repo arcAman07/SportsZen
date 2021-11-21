@@ -32,6 +32,10 @@ exports.getAllProducts = (req, res, next) => {
   });
 };
 
+exports.getProductTemplate = (req, res, next) => {
+  res.render("createasset.ejs");
+};
+
 exports.getProduct = (req, res, next) => {
   Product.findOne({ _id: req.params.id }, (err, user) => {
     if (!err) {
