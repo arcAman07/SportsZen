@@ -21,6 +21,7 @@ const loginRoutes = require("./routes/loginRoutes");
 const productRoutes = require("./routes/productRoutes");
 const homeRoute = require("./routes/homeRoute");
 const shopRoute = require("./routes/shopRoute");
+const ARRoute = require("./routes/ARRoute");
 
 // Testing it on local database on Robo-3T
 
@@ -34,5 +35,6 @@ app.use(shopRoute);
 app.use(signRoutes);
 app.use(loginRoutes);
 app.use(productRoutes);
+app.use(ARRoute);
 
 app.listen(PORT, () => console.log("The server is running"));
