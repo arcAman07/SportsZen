@@ -1,4 +1,4 @@
-# Sportzen ⛓⛓⚽️♜
+# Sportzen ⛓⚽️♜
 
 ## Abstract
 
@@ -16,4 +16,6 @@ We are giving a virtual preview of the NFT using Augmented Reality (similar to p
 
 Augmented Reality being used to give a virtual experience of a Non-Fungible Token in our preferred surroundings. This feature is similar to preview for products in an e commerce store, but has not been tried before with blockchain.
 
-## Deployement
+## Deployment
+
+## License
