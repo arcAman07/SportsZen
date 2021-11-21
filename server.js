@@ -5,9 +5,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
+const ejs = require("ejs");
+const _ = require("lodash");
 const app = express();
 const PORT = process.env.PORT;
+app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 // app.use(bodyParser.json())
 
 const signRoutes = require("./routes/signRoutes");
