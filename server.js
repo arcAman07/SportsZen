@@ -18,6 +18,7 @@ const signRoutes = require("./routes/signRoutes");
 const loginRoutes = require("./routes/loginRoutes");
 const productRoutes = require("./routes/productRoutes");
 const homeRoute = require("./routes/homeRoute");
+const shopRoute = require("./routes/shopRoute");
 
 // Testing it on local database on Robo-3T
 
@@ -27,6 +28,7 @@ mongoose.connect("mongodb://localhost:27017/sportDB", {
 });
 
 app.use(homeRoute);
+app.use(shopRoute);
 app.use(signRoutes);
 app.use(loginRoutes);
 app.use(productRoutes);
