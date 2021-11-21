@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="style">
+</head>
+
+<body class="bg-gray-800">
+
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-20">
+                            <span class="font-semibold text-gray-500 text-lg">Sportzen</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="items.html"
+                            class="py-4 px-5 text-blue-500 border-b-4 border-blue-500 font-semibold ">Home</a>
+                        <a href="createasset.html"
+                            class="py-4 px-5 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Create
+                            Asset
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-gray-800 font-semibold">Home</a></li>
+                <li><a href="createasset.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 bg-gray-800 transition duration-300">Create
+                        Asset</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <div class="mx-auto container flex items-center" id="nav">
+        <div class="w-full pt-2 p-4">
+
+            <div class="mx-auto md:p-6 md:w-1/2">
+                <div class="flex flex-wrap justify-between mb-5">
+                    <h1 class="text-2xl text-white text-center">
+                        Create Asset
+                    </h1>
+                </div>
+
+                <div class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <form>
+                        <div class="mb-8">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <input id="assetname" type="text" class="block text-white pr-10 shadow appearance-none border-2
+                                border-blue-500 rounded w-full py-2 px-4 mb-3 leading-tight focus:outline-none
+                                bg-gray-600 transition duration-500 ease-in-out" placeholder="Asset Name" />
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <textarea rows="10" id="assetdesc" type="text"
+                                    class="block text-white pr-10 shadow appearance-none border-2 border-blue-500 rounded w-full py-2 px-4 mb-3 leading-tight focus:outline-none bg-gray-600 transition duration-500 ease-in-out"
+                                    placeholder="Asset Description"> </textarea>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <input id="assetval" type="number"
+                                    class="block text-white pr-10 shadow appearance-none border-2 border-blue-500 rounded w-full py-2 px-4 mb-3 leading-tight focus:outline-none bg-gray-600 transition duration-500 ease-in-out"
+                                    placeholder="Asset Prize" />
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <label class="block text-gray-500 font-bold" for="uploadfile">
+                                        <input class="ml-2 leading-tight" type="file" id="uploadfile" />
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button
+                                class="transition duration-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                type="submit">
+                                Create Asset
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

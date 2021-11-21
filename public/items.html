@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="style">
+</head>
+
+<body class="bg-gray-800">
+
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-20">
+                            <span class="font-semibold text-gray-500 text-lg">Sportzen</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="" class="py-4 px-5 text-blue-500 border-b-4 border-blue-500 font-semibold ">Home</a>
+                        <a href="createasset.html"
+                            class="py-4 px-5 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Create
+                            Asset
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-gray-800 font-semibold">Home</a></li>
+                <li><a href="#services"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 bg-gray-800 transition duration-300">Purchased
+                        Items</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <section class="items-list">
+        <h2 class="text-white py-10 xs:text-center lg:text-left lg:mx-10 text-3xl font-bold">All Assets</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+
+            <div class="my-10 mx-8">
+                <div class="rounded overflow-hidden shadow-lg bg-black h-full">
+                    <img src="/assets/image.jpg" alt="none" />
+                    <div class="px-6 py-4">
+                        <div class="text-blue-500 mb-2 text-2xl font-bold px-2">Name</div>
+                        <p class="text-white mb-3 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            consequatur eos minima, sed quasi aspernatur quam eaque quod molestias porro?</p>
+                    </div>
+                    <div class="grid gap-5 mt-2 mb-6 justify-items-center">
+                        <p class="text-2xl mb-4 font-bold text-white">{nft.price} ETH</p>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold
+                            py-2 px-4 rounded-full w-auto">
+                            Buy Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
