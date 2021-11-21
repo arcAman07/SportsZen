@@ -1,0 +1,27 @@
+#tt {
+  font-family: "Raleway", sans-serif;
+  padding: 3em 2em;
+  font-size: 18px;
+
+  color: white;
+}
+
+#oo {
+  font-weight: 400;
+  margin: 0 0;
+  color: white;
+  font-size: 3.6em;
+  /* width: auto; */
+  height: 100px;
+  box-sizing: border-box;
+}
+h2 {
+  color: white;
+  font-size: 2em;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
