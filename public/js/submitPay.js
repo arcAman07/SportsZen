@@ -3,7 +3,7 @@ var contract;
 $(document).ready(async function() {
     web3 = new Web3(web3.currentProvider);
     
-    var address = "0xdfA431bC5bb061Bf72B0060F4A55414A7A1d2caA";
+    var address = "0xddDf78546d4964Fdb04ABdcDbA8cfc5EeC25aAEb";
 
     var abi = [
         {
