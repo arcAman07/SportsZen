@@ -12,6 +12,8 @@ const deleteProductController = require("../controllers/deleteProductController"
 
 router.post("/admin/product", productController.postProduct);
 
+router.get("/admin/product", productController.getProductTemplate);
+
 router.get("/admin/product/:id", productController.getProduct);
 
 router.patch("/admin/product/:id", patchProductController.patchProduct);
