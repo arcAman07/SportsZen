@@ -13,10 +13,11 @@
 html,
 body {
   height: 100%;
+
 }
 body {
   font: 16px/1.2 "Roboto", sans-serif;
-  color: #333;
+  background-color: #333;
 }
 a {
   display: inline-block;
@@ -37,7 +38,7 @@ a {
 /* container */
 .container {
   width: 600px;
-  height: 400px;
+  height: auto;
   border-radius: 10px;
   background-color: rgb(63, 63, 63);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -89,17 +90,17 @@ a {
   margin-right: 4px;
 }
 .leaderboard li:nth-child(1) {
-  background: #fa6855;
+  background: #003572;
 }
 .leaderboard li:nth-child(2) {
-  background: #e0574f;
+  background: #004586;
 }
 .leaderboard li:nth-child(3) {
-  background: #d7514d;
+  background: #003572;
 }
 .leaderboard li:nth-child(4) {
-  background: #cd4b4b;
+  background: #004586;
 }
 .leaderboard li:nth-child(5) {
-  background: #c24448;
+  background: #003572;
 }
