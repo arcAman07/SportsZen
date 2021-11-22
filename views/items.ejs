@@ -7,6 +7,8 @@
     <title>Items</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="style.css" rel="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="bg-gray-800">
@@ -59,6 +61,10 @@
             btn.addEventListener("click", () => {
                 menu.classList.toggle("hidden");
             });
+
+            function myFunction(x) {
+                x.classList.toggle("fa-thumbs-down");
+            }
         </script>
     </nav>
 
@@ -81,6 +87,11 @@
                                                         py-2 px-4 rounded-full w-auto text-xl">
                                 Buy Now
                             </button>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold
+                                                        py-2 px-4 rounded-full w-auto text-xl">
+                                Upvote
+                            </button>
+                            <i onclick="myFunction(this)" class="fa fa-thumbs-up text-white "></i>
                         </form>
 
                     </div>
