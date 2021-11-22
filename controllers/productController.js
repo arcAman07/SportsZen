@@ -16,7 +16,6 @@ exports.postProduct = (req, res, next) => {
     } else {
       console.log("Successfully added the new product");
       res.render("items.ejs");
-      res.sendStatus(200);
     }
   });
 };
