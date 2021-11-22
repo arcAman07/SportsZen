@@ -25,6 +25,7 @@ const ARRoute = require("./routes/ARRoute");
 const ErrorRoute = require("./routes/404Route");
 const purchaseRoute = require("./routes/purchaseRoute");
 const ResultRoute = require("./routes/resultRoute");
+const leaderboard = require("./routes/leaderboard");
 
 // Testing it on local database on Robo-3T
 
@@ -41,6 +42,7 @@ app.use(productRoutes);
 app.use(ARRoute);
 app.use(purchaseRoute);
 app.use(ResultRoute);
+app.use(leaderboard);
 // app.use(ErrorRoute);
 
 app.listen(PORT, () => console.log("The server is running"));
