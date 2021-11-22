@@ -1,3 +1,5 @@
 # dependencies
+.env
 node_modules
-public/assets1
+public/
+assets1/
