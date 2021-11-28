@@ -23,10 +23,10 @@ The main purpose of this decentralized application is to promote unpopular sport
 ## Challenges we ran into
 We faced multiple challenges while developing this project
 
-Integrating the smart contracts with the frontend
-AR view of the owned digital asser
-Setting up metamask
-Connecting metamask to localhost
+- Integrating the smart contracts with the frontend
+- AR view of the owned digital asset
+- Setting up metamask
+- Connecting metamask to localhost
 
 ## Features
 
