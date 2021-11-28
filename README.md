@@ -20,6 +20,14 @@ Augmented Reality being used to give a virtual experience of a Non-Fungible Toke
 
 The main purpose of this decentralized application is to promote unpopular sports and under-rated players (in the field of sports) in India. As we have seen currently popular blockchain based companies like Polygon, CoinDCX,etc are taking a step forward to promote unpopular sports like Chess, Football, etc in India and this has created a wave. We would love to collaborate with these companies for our decentralized application “Sports-Zen” and do our best in any way possible. Through the blockchain transaction a part of the transaction will go for the upliftment of the sport in India ( a part of the transaction will be ledgered to our decentralised application apart from gas fees ) and then the rest to the admin who put the NFT up for sale. Along with the use of AR and future implementation of VR we try to take this to a whole new level and bring about a change in the sports fraternity not only in India but around the world with this application.
 
+## Challenges we ran into
+We faced multiple challenges while developing this project
+
+Integrating the smart contracts with the frontend
+AR view of the owned digital asser
+Setting up metamask
+Connecting metamask to localhost
+
 ## Features
 
 - View list of Assets created
