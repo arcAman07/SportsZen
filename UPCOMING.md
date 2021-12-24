@@ -9,3 +9,4 @@
 7) Auth for the admin side .
 8) New Page for users to add their NFTs .( it will be moderated by the admin )
 9) Configure rest of the REST APIs ( CRUD )
+10) Fully test model architecture and maybe adding "CREDIBILITY FEATURE" just like stack overflow did.
