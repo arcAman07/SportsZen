@@ -11,4 +11,4 @@
 9) Configure rest of the REST APIs ( CRUD )
 10) Fully test model architecture and maybe adding "CREDIBILITY FEATURE" just like stack overflow did.
 11) Massive Revamp in UI/UX to make it better.
-12) 
+12) "GALLERY" to store these NFTs for the user and further improving user experience in AR/VR.
