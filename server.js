@@ -29,7 +29,7 @@ const leaderboard = require("./routes/leaderboard");
 
 // Testing it on local database on Robo-3T
 
-mongoose.connect("mongodb://localhost:27017/sportDB", {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
